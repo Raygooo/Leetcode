@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 /**
- * Class Q0001 is created on 02/08/2019 22:46.
+ * Class LeetCode.Q0001 is created on 02/08/2019 22:46.
  *
  * @author Ray
  * @version 02/08/2019

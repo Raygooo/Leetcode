@@ -1,8 +1,7 @@
-package Q0155;
+package LeetCode.Q0155;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.Stack;
 
 public class Q0155 {
 

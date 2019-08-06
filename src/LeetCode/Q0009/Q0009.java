@@ -1,4 +1,4 @@
-package Q0009;
+package LeetCode.Q0009;
 
 public class Q0009 {
 

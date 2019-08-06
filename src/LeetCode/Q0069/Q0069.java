@@ -1,7 +1,7 @@
-package Q0069;
+package LeetCode.Q0069;
 
 /**
- * Class Q0069.Q0069 is created on 02/08/2019 00:29.
+ * Class LeetCode.Q0069.LeetCode.Q0069 is created on 02/08/2019 00:29.
  *
  * @author Ray
  * @version 02/08/2019
@@ -39,6 +39,10 @@ class Solution {
     }
 }
 
+
+/**
+ * from leetcode solution
+ */
 class Solution2 {
     public int mySqrt(int x) {
         if (x == 1) return 1;

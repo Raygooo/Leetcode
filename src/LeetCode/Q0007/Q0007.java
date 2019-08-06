@@ -1,4 +1,4 @@
-package Q0007;
+package LeetCode.Q0007;
 
 import java.util.ArrayList;
 import java.util.Collections;

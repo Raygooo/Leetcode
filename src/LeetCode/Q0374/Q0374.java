@@ -1,6 +1,4 @@
-package Q0374;
-
-import java.math.BigInteger;
+package LeetCode.Q0374;
 
 public class Q0374 {
 
