@@ -63,7 +63,6 @@ class Solution2 {
 
         List<Integer> digits = new ArrayList<>();
 
-
         for (int i = 10; i < Math.pow(10, getNumLength(x) + 1); i = i * 10) {
             digits.add((x % i) / (i / 10));
         }

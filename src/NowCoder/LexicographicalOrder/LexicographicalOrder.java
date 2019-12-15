@@ -22,6 +22,8 @@ public class LexicographicalOrder {
             long n = sc.nextInt();
             long m = sc.nextInt();
             System.out.println(solution.solution(n, m));
+            char c = '0';
+            String a = "a";
         }
     }
 
@@ -34,7 +36,7 @@ public class LexicographicalOrder {
                 arr.add(String.valueOf(i));
             }
             Collections.sort(arr);
-            return Long.parseLong(arr.get(((int) m - 1)));
+            return Long.parseLong(arr.get((int) m - 1));
         }
     }
 
