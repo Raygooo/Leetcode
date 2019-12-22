@@ -1,6 +1,7 @@
 package Test;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Class Test.test is created on 2019/12/3 9:58.
@@ -10,11 +11,19 @@ import java.util.*;
  **/
 
 public class test {
-    public static void main(String[] args) {
-        System.out.println(5 | 3);
-        HashMap<Integer, String> hashMap = new HashMap<>();
-        Map<Integer, String> map = Collections.synchronizedMap(hashMap);
+    transient public int a;
 
+    public static void main(String[] args) {
+
+        int a = 501, b = 343;
+//        a=a+b;
+//        b=a-b;
+//        a=a-b;
+        a = a ^ b;
+        b = a ^ b;
+        a = a ^ b;
+        System.out.println(a);
+        System.out.println(b);
     }
 
     public void set(int i) {
@@ -24,16 +33,22 @@ public class test {
     }
 }
 
-class Animal {
-    void eat() {
-
+interface withMethod {
+    default void test() {
+        System.out.println("hi");
     }
 
-    ;
 }
 
-class Cat extends Animal {
-    void eat() {
+abstract class father {
+    public abstract Number set();
+}
 
+class son extends father {
+
+    @Override
+    public Integer set() {
+        return null;
     }
 }
+

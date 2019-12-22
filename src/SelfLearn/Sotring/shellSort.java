@@ -7,7 +7,7 @@ package SelfLearn.Sotring;
  * @version 2019/12/10
  **/
 
-public class shellSort {
+public class ShellSort {
     void shellSort(int[] a) {
         int j = 0;
 

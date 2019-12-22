@@ -15,6 +15,8 @@ public class Transient implements Serializable {
     private transient String name2;
     private int num1;
     private transient int num2;
+    public static int a = 1;
+    public static transient int b = 100;
 
     public Transient(String name1, String name2, int num1, int num2) {
         this.name1 = name1;
@@ -30,6 +32,8 @@ public class Transient implements Serializable {
                 ", name2='" + name2 + '\'' +
                 ", num1=" + num1 +
                 ", num2=" + num2 +
+                ", a=" + a +
+                ", b=" + b +
                 '}';
     }
 
@@ -40,6 +44,7 @@ public class Transient implements Serializable {
         System.out.println(
                 "序列化之前： " + Transient.toString()
         );
+        b = 1;
         ObjectOutputStream outputStream;
         ObjectInputStream inputStream;
         String filepath = "C:\\Users\\Ray\\iCloudDrive\\Documents\\Programing\\Java\\Leetcode\\src\\Test\\TransientTest\\Transient.obj";

@@ -7,7 +7,7 @@ package SelfLearn.Sotring;
  * @version 2019/12/10
  **/
 
-public class heapSort {
+public class HeapSort {
 
 
     private static int leftChild(int i) {
