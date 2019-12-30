@@ -1,7 +1,7 @@
 package SelfLearn.DesignPattern.Singleton;
 
 /**
- * Class Main is created on 2019/12/12 21:31.
+ * Class Draft.Main is created on 2019/12/12 21:31.
  *
  * @author Ray
  * @version 2019/12/12

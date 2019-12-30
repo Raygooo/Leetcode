@@ -9,3 +9,18 @@ package LeetCode.Q0461;
 
 public class Q0461 {
 }
+
+class Solution {
+    public int hammingDistance(int x, int y) {
+        int res = 0;
+        while (x != 0 || y != 0) {
+            int x1 = x % 2;
+            int y1 = y % 2;
+            if (x1 != y1)
+                res++;
+            x /= 2;
+            y /= 2;
+        }
+        return res;
+    }
+}

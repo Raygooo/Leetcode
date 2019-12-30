@@ -1,14 +1,15 @@
-import java.util.ArrayList;
+package Draft;
+
 import java.util.Arrays;
 
 /**
- * Class Main2 is created on 2019/12/20 17:09.
+ * Class Draft.Main2 is created on 2019/12/20 17:09.
  *
  * @author Ray
  * @version 2019/12/20
  **/
 
-public class Main2 {
+public class Draft2 {
     public static void main(String[] args) {
         int[] a = {0,1,0,4,8,2};
         cupSort(a);

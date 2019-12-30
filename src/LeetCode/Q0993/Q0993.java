@@ -1,5 +1,7 @@
 package LeetCode.Q0993;
 
+import LeetCode.TreeNode;
+
 /**
  * Class Q0993 is created on 05/08/2019 23:49.
  *
@@ -14,16 +16,6 @@ public class Q0993 {
     }
 }
 
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}
 
 class Solution {
     public boolean isCousins(TreeNode root, int x, int y) {

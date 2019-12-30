@@ -1,17 +1,18 @@
-import javax.swing.plaf.IconUIResource;
+package Draft;
+
 import java.util.Scanner;
 
 /**
- * Class Main is created on 2019/12/20 15:51.
+ * Class Draft.Main is created on 2019/12/20 15:51.
  *
  * @author Ray
  * @version 2019/12/20
  **/
 
 
-public class Main {
-    public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
+public class Draft1 {
+    public static void main(final String[] args) throws Exception {
+        final Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
         if (input < 0)
             throw new Exception("required positive number!");

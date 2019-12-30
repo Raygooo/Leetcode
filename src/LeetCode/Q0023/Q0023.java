@@ -1,7 +1,5 @@
 package LeetCode.Q0023;
 
-import java.util.*;
-
 /**
  * Class Q0023 is created on 2019/12/5 17:33.
  *

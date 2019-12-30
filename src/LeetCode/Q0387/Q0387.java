@@ -1,9 +1,6 @@
 package LeetCode.Q0387;
 
-import java.sql.Time;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 
 /**
  * Class Q0387 is created on 06/08/2019 20:08.
