@@ -45,7 +45,6 @@ public class InsertionSort {
                 items[j] = items[j - 1];
             }
             items[j] = tmp;
-
         }
     }
 

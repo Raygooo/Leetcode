@@ -59,21 +59,21 @@ public class QuickSort {
         }
     }
 
-    public static void quickPractice(int[] arr, int low, int high) {
-        int left, right, tmpValue;
+    public static void quickSort(int[] arr, int low, int high) {
+        int left, right, standard;
 
         if (low >= high)
             return;
 
         left = low;
         right = high;
-        tmpValue = arr[low];
+        standard = arr[low];
 
         while (left != right) {
-            while (tmpValue <= arr[right] && left < right)
+            while (standard <= arr[right] && left < right)
                 right--;
 
-            while (tmpValue >= arr[left] && left < right)
+            while (standard >= arr[left] && left < right)
                 left++;
 
             if (left < right) {
@@ -85,49 +85,9 @@ public class QuickSort {
 
         //left == right
         arr[low] = arr[left];
-        arr[left] = tmpValue;
-
-        quickPractice(arr, low, left - 1);
-        quickPractice(arr, right + 1, high);
-
-
-    }
-
-    public static void quickSort(int[] arr, int low, int high) {
-        int i, j, tmpValue;
-
-        if (low > high) {
-            return;
-        }
-        i = low;
-        j = high;
-        //temp就是基准位
-        tmpValue = arr[low];
-
-        while (i != j) {
-            //先看右边，依次往左递减
-            while (tmpValue <= arr[j] && i < j) {
-                j--;
-            }
-            //再看左边，依次往右递增
-            while (tmpValue >= arr[i] && i < j) {
-                i++;
-            }
-            //如果满足条件则交换
-            if (i < j) {
-                int t = arr[j];
-                arr[j] = arr[i];
-                arr[i] = t;
-            }
-
-        }
-        //最后将基准为与i和j相等位置的数字交换
-        arr[low] = arr[i];
-        arr[i] = tmpValue;
-        //递归调用左半数组
-        quickSort(arr, low, j - 1);
-        //递归调用右半数组
-        quickSort(arr, j + 1, high);
+        arr[left] = standard;
+        quickSort(arr, low, left - 1);
+        quickSort(arr, right + 1, high);
     }
 
 }

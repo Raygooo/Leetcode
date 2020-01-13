@@ -274,6 +274,7 @@ public class ScanThroughTree {
         return Math.max(maxDepth(node.left), maxDepth(node.right)) + 1;
     }
 
+    //helper method, perform visit node action.
     public static void visit(TreeNode treeNode) {
         System.out.print(treeNode.val + " ");
     }
