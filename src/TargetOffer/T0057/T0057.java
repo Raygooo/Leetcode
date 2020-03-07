@@ -1,4 +1,4 @@
-package TargetOffer.Q0057;
+package TargetOffer.T0057;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import java.util.List;
  * @version 2020/3/6
  **/
 
-public class Q0057 {
+public class T0057 {
     public static void main(String[] args) {
         Solution2 s = new Solution2();
         System.out.println(Arrays.deepToString(s.findContinuousSequence(9)));
