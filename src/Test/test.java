@@ -14,7 +14,13 @@ public class test {
     transient public int a;
 
     public static void main(String[] args) {
-        System.out.println(String.format("%02d",2));
+
+        int a =2,b=-1,c=2;
+        if (a < b)
+            if (b < 0)
+                c = 0;
+            else c++;
+        System.out.println(c);
 
     }
 
