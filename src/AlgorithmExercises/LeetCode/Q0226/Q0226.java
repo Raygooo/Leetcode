@@ -1,5 +1,7 @@
 package AlgorithmExercises.LeetCode.Q0226;
 
+import AlgorithmExercises.LeetCode.TreeNode;
+
 /**
  * Class Q0226 is created on 2019/12/23 11:48.
  *
@@ -9,16 +11,6 @@ package AlgorithmExercises.LeetCode.Q0226;
 
 public class Q0226 {
 
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
 }
 
 class Solution {

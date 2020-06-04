@@ -1,5 +1,7 @@
 package AlgorithmExercises.LeetCode.Q0206;
 
+import AlgorithmExercises.LeetCode.ListNode;
+
 /**
  * Class Q0206 is created on 2019/12/3 10:50.
  *
@@ -10,15 +12,6 @@ package AlgorithmExercises.LeetCode.Q0206;
 public class Q0206 {
 
 
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
 }
 
 /**

@@ -1,5 +1,7 @@
 package AlgorithmExercises.LeetCode.Q0328;
 
+import AlgorithmExercises.LeetCode.ListNode;
+
 /**
  * Class Q0328 is created on 2019/12/3 16:40.
  *
@@ -10,15 +12,6 @@ package AlgorithmExercises.LeetCode.Q0328;
 public class Q0328 {
     public static void main(String[] args) {
 
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
     }
 }
 

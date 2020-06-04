@@ -1,5 +1,7 @@
 package AlgorithmExercises.LeetCode.Q0725;
 
+import AlgorithmExercises.LeetCode.ListNode;
+
 import java.util.Arrays;
 
 /**
@@ -16,16 +18,6 @@ public class Q0725 {
         System.out.println(Arrays.toString(solution2.splitListToParts(root, 6)));
     }
 }
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
-
 
 class Solution1 {
     public ListNode[] splitListToParts(ListNode root, int k) {

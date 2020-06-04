@@ -1,5 +1,7 @@
 package AlgorithmExercises.LeetCode.Q0538;
 
+import AlgorithmExercises.LeetCode.TreeNode;
+
 /**
  * Class Q0538 is created on 2019/12/24 12:41.
  *
@@ -8,16 +10,6 @@ package AlgorithmExercises.LeetCode.Q0538;
  **/
 
 public class Q0538 {
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
 }
 
 class Solution {

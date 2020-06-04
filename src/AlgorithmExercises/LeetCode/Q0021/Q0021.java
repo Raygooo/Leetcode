@@ -1,5 +1,7 @@
 package AlgorithmExercises.LeetCode.Q0021;
 
+import AlgorithmExercises.LeetCode.ListNode;
+
 /**
  * Class Q0021 is created on 2019/12/5 17:03.
  *
@@ -8,14 +10,6 @@ package AlgorithmExercises.LeetCode.Q0021;
  **/
 
 public class Q0021 {
-}
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
 }
 
 

@@ -1,5 +1,7 @@
 package AlgorithmExercises.LeetCode.Q0092;
 
+import AlgorithmExercises.LeetCode.ListNode;
+
 /**
  * Class Q0092 is created on 2019/12/3 11:40.
  *
@@ -8,15 +10,6 @@ package AlgorithmExercises.LeetCode.Q0092;
  **/
 
 public class Q0092 {
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
 }
 
 /**

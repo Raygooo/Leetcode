@@ -1,5 +1,7 @@
 package AlgorithmExercises.LeetCode.Q0617;
 
+import AlgorithmExercises.LeetCode.TreeNode;
+
 import java.util.Stack;
 
 /**
@@ -10,17 +12,6 @@ import java.util.Stack;
  **/
 
 public class Q0617 {
-}
-
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
 }
 
 class Solution {

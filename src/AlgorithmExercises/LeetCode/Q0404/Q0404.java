@@ -1,5 +1,7 @@
 package AlgorithmExercises.LeetCode.Q0404;
 
+import AlgorithmExercises.LeetCode.TreeNode;
+
 import java.util.Date;
 
 /**
@@ -14,17 +16,6 @@ public class Q0404 {
     public static void main(String[] args) {
         Date date = new Date();
         System.out.println(date.toString());
-    }
-}
-
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
     }
 }
 
