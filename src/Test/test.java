@@ -1,7 +1,7 @@
 package Test;
 
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Class Test.test is created on 2019/12/3 9:58.
@@ -22,7 +22,9 @@ public class test {
     static boolean isOk() { return isOk; }
 
     public static void main(String[] args) {
-
+        Map<Integer, Object> map = new HashMap<>();
+        Object o = map.get(123);
+        System.out.println(o == null);
     }
 
 }
