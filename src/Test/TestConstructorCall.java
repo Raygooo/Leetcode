@@ -3,7 +3,6 @@ package Test;
 public class TestConstructorCall {
 
     private SomeCallback mSomeCallback;
-    private boolean doCallback = false;
 
     TestConstructorCall(SomeCallback callback) {
         mSomeCallback = callback;
@@ -20,7 +19,6 @@ public class TestConstructorCall {
 //        } catch (InterruptedException e) {
 //            e.printStackTrace();
 //        }
-
     }
 
     void doSome() {
