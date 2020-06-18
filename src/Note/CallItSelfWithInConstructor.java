@@ -1,22 +1,41 @@
-package Test;
+package Note;
 
-public class TestConstructorCall {
+/**
+ * 不要在constructor里面写逻辑，虽然这可能符合直觉，但是会出错
+ */
+interface SomeCallback {
+    void call();
+}
+
+public class CallItSelfWithInConstructor implements Runnable {
 
     private SomeCallback mSomeCallback;
     private volatile boolean doCallback = false;
 
-    TestConstructorCall(SomeCallback callback) {
+    CallItSelfWithInConstructor(SomeCallback callback) {
         mSomeCallback = callback;
-        callTheCallback();
+//        callTheCallback();
+        new Thread(this, "callback Thread").start();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("construct ok");
+    }
+
+    public static void main(String[] args) {
+        new InitCallback();
     }
 
     void callTheCallback() {
         // mSomeCallback.call(); //这样会导致InitCallback里的 testConstructorCall没有初始化就发送信息过去。
-        new Thread(() -> {
+//        new Thread(() -> {
 //            while (!doCallback) {
 //            }
-            mSomeCallback.call();
-        }).start();
+        mSomeCallback.call();
+//        }).start();
 
         //- 还是会有Null pointer错误， 所以这样做就是赌这个类会提前比新线程里的call方法提前执行。
 //        try {
@@ -35,29 +54,23 @@ public class TestConstructorCall {
         System.out.println("Do Some");
     }
 
-    public static void main(String[] args) {
-        while (true) {
-            new InitCallback();
-        }
+    @Override
+    public void run() {
+        callTheCallback();
     }
 }
 
 class InitCallback {
-    TestConstructorCall testConstructorCall;
+    CallItSelfWithInConstructor callItSelfWithInConstructor;
 
     SomeCallback mCallback = new SomeCallback() {
         @Override
         public void call() {
-            testConstructorCall.doSome();
+            callItSelfWithInConstructor.doSome();
         }
     };
 
     InitCallback() {
-        testConstructorCall = new TestConstructorCall(mCallback);
+        callItSelfWithInConstructor = new CallItSelfWithInConstructor(mCallback);
     }
-}
-
-
-interface SomeCallback {
-    void call();
 }
