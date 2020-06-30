@@ -9,7 +9,7 @@ package OnJava8.Chapter6;
 
 public class Flower {
     int petalCount = 0;
-    String s = "initial value";
+    String s = "initial id";
 
 
     Flower(int petals) {

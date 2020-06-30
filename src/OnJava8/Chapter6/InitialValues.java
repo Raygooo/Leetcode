@@ -21,7 +21,7 @@ public class InitialValues {
     InitialValues reference;
 
     void printInitialValues() {
-        System.out.println("Data type Initial value");
+        System.out.println("Data type Initial id");
         System.out.println("boolean " + t);
         System.out.println("char[" + c + "]");
         System.out.println("byte " + b);
