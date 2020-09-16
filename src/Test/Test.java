@@ -1,26 +1,20 @@
 package Test;
 
-import java.awt.*;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class Test {
     public static void main(String[] args) throws IOException {
-
+    }
+    static class Parent {
+        protected void speak() {
+            System.out.println("parent speak");
+        }
     }
 
-    public enum EnumTest{
-        IDM((byte)1);
-
-        byte aByte;
-        EnumTest(byte b) {
-            aByte = b;
-        }
-
-        public byte getaByte() {
-            return aByte;
+    static class Child extends Parent {
+        @Override
+        public void speak() {
+            System.out.println("child speak");
         }
     }
 }

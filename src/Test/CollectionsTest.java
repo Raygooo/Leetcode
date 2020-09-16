@@ -13,10 +13,11 @@ public class CollectionsTest {
 
 
     public static void main(String[] args) {
-        CollectionsTest co = new CollectionsTest();
-        co.thingHashSet.add(new Thing(12, "1"));
-        co.thingHashSet.add(new Thing(15, "2"));
-        co.thingHashSet.add(new Thing(12, "3"));
-        System.out.println(co.thingHashSet);
+        Type type = Type.valueOf("aaa");
+        System.out.println(type);
+    }
+
+    public enum Type {
+        SOME_TYPE;
     }
 }
