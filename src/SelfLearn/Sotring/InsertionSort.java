@@ -1,8 +1,6 @@
 package SelfLearn.Sotring;
 
-import java.util.HashMap;
-
-/**
+/*
  * Class insertionSort is created on 2019/12/10 20:30.
  *
  * @author Ray
@@ -10,16 +8,16 @@ import java.util.HashMap;
  **/
 
 
-/*
-插入排序：
-
-    平均 时间复杂度 O(n^2)
-    最好 时间复杂度 O(n)
-    最坏 时间复杂度 O(n^2)
-
-    空间复杂度 O(1)
-
-    是稳定排序
+/**
+ * 插入排序：
+ * <p>
+ * 平均 时间复杂度 O(n^2)
+ * 最好 时间复杂度 O(n)
+ * 最坏 时间复杂度 O(n^2)
+ * <p>
+ * 空间复杂度 O(1)
+ * <p>
+ * 是稳定排序
  */
 public class InsertionSort {
 

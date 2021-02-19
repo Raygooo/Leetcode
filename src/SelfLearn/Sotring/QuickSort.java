@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
+/*
  * Class QuickSort is created on 2019/12/19 15:52.
  *
  * @author Ray
@@ -12,22 +12,22 @@ import java.util.List;
  **/
 
 
-/*
-快速排序：
-    平均 时间复杂度 O(n*log2n)
-    最好 时间复杂度 O(n*log2n)
-    最差 时间复杂度 O(n^2)
-
-    空间复杂度 O(n*log2n)
-
-    是不稳定排序
+/**
+ * 快速排序：
+ * 平均 时间复杂度 O(n*log2n)
+ * 最好 时间复杂度 O(n*log2n)
+ * 最差 时间复杂度 O(n^2)
+ * <p>
+ * 空间复杂度 O(n*log2n)
+ * <p>
+ * 是不稳定排序
  */
 public class QuickSort {
     public static void main(String[] args) {
 //        int[] arr = {2,4,5,3,6,4,5,7,8,2};
 //        quickPractice(arr, 0, 9);
 //        System.out.println(Arrays.toString(arr));
-        ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(2,4,5,3,6,4,5,7,8,2));
+        ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(2, 4, 5, 3, 6, 4, 5, 7, 8, 2));
         quickSort(arr);
         System.out.println(arr);
     }
