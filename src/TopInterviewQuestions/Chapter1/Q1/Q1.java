@@ -1,4 +1,4 @@
-package TopInterviewQuestions.Chapter1;
+package TopInterviewQuestions.Chapter1.Q1;
 
 public class Q1 {
     public static void main(String[] args) {

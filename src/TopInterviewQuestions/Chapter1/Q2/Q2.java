@@ -1,4 +1,4 @@
-package TopInterviewQuestions.Chapter1;
+package TopInterviewQuestions.Chapter1.Q2;
 
 import java.util.Arrays;
 import java.util.HashMap;
