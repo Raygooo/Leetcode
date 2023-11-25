@@ -20,6 +20,9 @@ tasks.test {
     useJUnitPlatform()
 }
 
+// set kotlin java target version to java 17
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "17"
+    kotlinOptions {
+        jvmTarget = "17"
+    }
 }
